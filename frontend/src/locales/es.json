@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "simulador": "Simulador",
+    "progreso": "Mi progreso",
+    "ajustes": "Ajustes",
+    "perfil": "Mi perfil",
+    "billetera": "Billetera",
+    "hola": "Hola, {{nombre}}",
+    "tutorial": "Ver tutorial",
+    "cerrarSesion": "Cerrar sesión",
+    "navegacion": "Navegación principal"
+  },
+  "moneda": {
+    "etiqueta": "Moneda",
+    "descripcionSelector": "Moneda de visualización",
+    "fuenteTrm": "TRM: Superintendencia Financiera de Colombia",
+    "fuenteEcb": "Otras monedas: Banco Central Europeo",
+    "licenciaTrm": "TRM · CC BY-SA 4.0",
+    "vigencias": "Vigencia: TRM {{trm}} · BCE {{ecb}}",
+    "vigenciaTrm": "TRM vigente: {{trm}}",
+    "vigenciaEcb": "BCE vigente: {{ecb}}",
+    "actualizar": "Actualizar tasas",
+    "actualizando": "Consultando tasas oficiales…",
+    "estado": {
+      "cargando": "Cargando tasas oficiales…",
+      "error": "No se pudieron cargar las tasas oficiales.",
+      "parcial": "Algunas tasas no están disponibles; solo se pueden elegir las monedas cargadas."
+    }
+  },
+  "perfil": {
+    "titulo": "Mi perfil",
+    "subtitulo": "Así apareces en InverSim.",
+    "foto": {
+      "titulo": "Foto de perfil",
+      "ayuda": "JPG, PNG o WebP de hasta 5 MB.",
+      "cambiar": "Cambiar foto",
+      "quitar": "Quitar foto",
+      "subiendo": "Subiendo… {{progreso}}%",
+      "subiendoAria": "Progreso de la subida de la foto",
+      "listo": "Foto actualizada.",
+      "quitada": "Foto eliminada.",
+      "tipoInvalido": "Elige una imagen JPG, PNG o WebP.",
+      "muyGrande": "La imagen pesa más de 5 MB.",
+      "error": "No pudimos procesar esa imagen."
+    },
+    "cuenta": {
+      "titulo": "Datos de la cuenta",
+      "nombre": "Nombre de usuario",
+      "nombreAyuda": "Entre 1 y 50 caracteres.",
+      "correo": "Correo electrónico",
+      "correoAyuda": "El correo no se puede cambiar.",
+      "capital": "Capital disponible",
+      "guardar": "Guardar cambios",
+      "guardando": "Guardando…",
+      "guardado": "Nombre actualizado.",
+      "nombreVacio": "El nombre no puede estar vacío."
+    }
+  },
+  "ajustes": {
+    "titulo": "Ajustes",
+    "subtitulo": "Personaliza cómo se ve y se lee InverSim.",
+    "editarPerfil": "Editar perfil",
+    "apariencia": {
+      "titulo": "Apariencia",
+      "descripcion": "Cambia entre el modo claro y el oscuro.",
+      "modoOscuro": "Modo oscuro",
+      "activado": "Activado",
+      "desactivado": "Desactivado"
+    },
+    "idioma": {
+      "titulo": "Idioma",
+      "descripcion": "Elige el idioma de la interfaz."
+    },
+    "reinicio": {
+      "titulo": "Reiniciar simulación",
+      "descripcion": "Borra tus inversiones, operaciones, evaluaciones y progreso, y restaura tu capital inicial.",
+      "boton": "Reiniciar juego",
+      "confirmarTitulo": "¿Reiniciar toda la simulación?",
+      "confirmarDescripcion": "Se eliminarán permanentemente tu portafolio, historial de operaciones, movimientos de billetera, evaluaciones y progreso. Tu saldo volverá al equivalente de {{capital}}. Esta acción no se puede deshacer.",
+      "cancelar": "Cancelar",
+      "confirmar": "Sí, reiniciar",
+      "reiniciando": "Reiniciando…",
+      "listo": "Simulación reiniciada. Tu saldo inicial está intacto y tu progreso comienza en 0%.",
+      "error": "No se pudo reiniciar la simulación. Intenta de nuevo."
+    },
+    "moneda": {
+      "titulo": "Moneda de visualización",
+      "descripcion": "Elige la moneda en la que quieres ver saldos, precios y resultados. Esto no modifica tu dinero ni tus operaciones."
+    },
+    "guardado": "Ajustes guardados.",
+    "error": "No pudimos guardar el ajuste. Se restauró el valor anterior."
+  },
+  "busqueda": {
+    "etiqueta": "Búsqueda global",
+    "placeholder": "Buscar acciones o secciones…",
+    "acciones": "Acciones",
+    "secciones": "Secciones",
+    "sinResultados": "Sin resultados para «{{q}}»",
+    "error": "No pudimos cargar las acciones."
+  },
+  "alertas": {
+    "titulo": "Alertas",
+    "abrir": "Abrir alertas",
+    "cerrar": "Cerrar alerta",
+    "noLeidas": "{{count}} sin leer",
+    "vacio": "Aún no tienes alertas. Te avisaremos cuando vendas una acción.",
+    "marcarLeidas": "Marcar como leídas",
+    "borrar": "Borrar todo",
+    "venta": {
+      "ganancia": "¡Ganaste {{monto}} con tu venta!",
+      "perdida": "Perdiste {{monto}} con tu venta",
+      "neutro": "Vendiste sin ganar ni perder",
+      "detalle": "Vendiste {{cantidad}} × {{ticker}} a {{precio}}"
+    }
+  },
+  "billetera": {
+    "titulo": "Mi billetera",
+    "subtitulo": "Tu dinero, tus inversiones y tu historial en un solo lugar.",
+    "saldo": "Saldo disponible",
+    "saldoAyuda": "Efectivo listo para comprar acciones",
+    "patrimonio": "Patrimonio total",
+    "valorAcciones": "Valor de tus acciones",
+    "invertido": "Total invertido",
+    "invertidoAyuda": "Lo que pagaste por tus acciones actuales. Hoy valen {{valor}}.",
+    "ganancia": "Ganancia / pérdida histórica",
+    "gananciaAyuda": "Realizada: {{realizada}} · Abierta: {{abierta}}",
+    "mejor": "Acción más rentable",
+    "mejorNota": "Mayor rendimiento sobre el dinero que pusiste en ella (ventas + posición abierta).",
+    "mejorAyuda": "{{empresa}} · {{monto}} en total",
+    "mejorVacia": "Aún no hay datos. Compra y vende para descubrirla.",
+    "composicion": "¿Dónde está tu dinero?",
+    "efectivo": "Efectivo",
+    "historial": {
+      "titulo": "Historial de transacciones",
+      "nota": "El resultado solo aparece en las ventas: es lo que ganaste o perdiste frente al precio promedio al que compraste.",
+      "fecha": "Fecha",
+      "ticker": "Ticker",
+      "cantidad": "Cantidad",
+      "precio": "Precio",
+      "resultado": "Resultado",
+      "sinResultado": "—",
+      "vacio": "Todavía no has hecho operaciones.",
+      "irSimulador": "Ir al simulador",
+      "mostrando": "Mostrando {{n}} de {{total}} operaciones"
+    },
+    "tipo": {
+      "compra": "Compra",
+      "venta": "Venta"
+    },
+    "error": "No pudimos cargar tu billetera. Reintentando…"
+  },
+  "simulador": {
+    "balance": {
+      "capital": "Capital disponible",
+      "capitalAyuda": "Dinero para comprar",
+      "capitalDetalle": "Efectivo virtual que puedes usar para comprar acciones.",
+      "inversiones": "En inversiones",
+      "inversionesDetalle": "Valor actual de tus acciones",
+      "patrimonio": "Patrimonio total",
+      "patrimonioDetalle": "{{cantidad}} vs. inicio",
+      "patrimonioDetalleAyuda": "Efectivo + valor de tus acciones. Parte del equivalente a {{capital}}."
+    },
+    "mercado": {
+      "titulo": "Mercado",
+      "ayuda": "Elige una empresa para ver su gráfico. El % es el cambio de los últimos minutos.",
+      "tienesAcciones": "Tienes acciones de esta empresa"
+    },
+    "grafico": {
+      "selecciona": "Selecciona una acción",
+      "selectorPeriodo": "Periodo de la gráfica",
+      "periodos": {
+        "live": "En vivo",
+        "1w": "Semanas",
+        "1m": "1 mes",
+        "1y": "1 año"
+      },
+      "semanaCorta": "Sem. {{n}}",
+      "precio": "Precio",
+      "enVivo": "🔴 En vivo: el precio cambia cada 3 segundos. La línea punteada marca dónde empezó este periodo.",
+      "historialSimulado": "Estos antecedentes son una simulación educativa, no precios históricos reales. El último punto coincide con el precio actual.",
+      "error": "No se pudo cargar el historial de este periodo. Inténtalo de nuevo."
+    },
+    "portafolio": {
+      "titulo": "Mi portafolio",
+      "vacio": "Aún no tienes acciones. ¡Compra tu primera para empezar!",
+      "accion": "Acción",
+      "cantidad": "Cant.",
+      "costoPromedio": "Costo prom.",
+      "precioActual": "Precio hoy",
+      "valor": "Valor",
+      "ganancia": "Ganancia",
+      "ultimasOperaciones": "Últimas operaciones",
+      "sinOperaciones": "Todavía no has hecho operaciones.",
+      "a": "a"
+    },
+    "tipoOperacion": {
+      "compra": "Compra",
+      "venta": "Venta"
+    },
+    "operar": {
+      "titulo": "Operar {{ticker}}",
+      "cantidadMinima": "Escribe una cantidad de al menos 1.",
+      "resultado": {
+        "compra": "Compraste {{cantidad}} × {{ticker}} a {{precio}} (total {{total}}).",
+        "venta": "Vendiste {{cantidad}} × {{ticker}} a {{precio}} (total {{total}})."
+      },
+      "ganaste": "🎉 Ganaste {{cantidad}}.",
+      "perdiste": "📉 Perdiste {{cantidad}}.",
+      "precioAccion": "Precio por acción",
+      "tienes": "Tienes",
+      "numeroAcciones": "{{cantidad}} acciones",
+      "maximoCompra": "Puedes comprar hasta",
+      "cuantas": "¿Cuántas acciones?",
+      "maximoAtajo": "Máx. compra",
+      "venderTodo": "Todo lo que tengo",
+      "totalEstimado": "Total estimado:",
+      "consejo": "Gana dinero si vendes por encima del precio que pagaste. Si vendes más barato, pierdes."
+    },
+    "mentor": {
+      "bienvenida": "¡Hola! Soy tu Mentor 🎓. Puedo analizar tus decisiones e inversiones. Para dudas sobre conceptos, usa el chat de aprendizaje de InverSim.",
+      "titulo": "Tu Mentor",
+      "descripcion": "Analizo tus operaciones y te ayudo a entender tus decisiones. Para aprender conceptos de inversión, pregunta en el chat de aprendizaje.",
+      "pensando": "El Mentor está pensando…",
+      "analiza": "Analizar mis decisiones",
+      "consejoInicial": "Pedir un consejo para empezar",
+      "placeholder": "Pregúntale algo",
+      "enviar": "Enviar",
+      "modoDemo": "Modo demo: respuestas automáticas sin IA externa."
+    },
+    "pie": "InverSim es un simulador educativo con dinero ficticio. No es asesoría financiera."
+  },
+  "progreso": {
+    "cargando": "Cargando tu progreso…",
+    "titulo": "Mi progreso",
+    "patrimonioActual": "Patrimonio actual",
+    "resultadoTotal": "Resultado total",
+    "desdeInicio": "{{porcentaje}} desde el inicio",
+    "operaciones": "Operaciones",
+    "mejorVenta": "Mejor venta",
+    "peorVenta": "Peor venta",
+    "sinVentas": "Aún sin ventas",
+    "evolucion": "Evolución de tu capital",
+    "evolucionAyuda": "Tu patrimonio (efectivo + acciones) desde que empezaste. La línea punteada es tu capital inicial.",
+    "patrimonio": "Patrimonio",
+    "capitalInicial": "Capital inicial",
+    "evaluaciones": "Tus evaluaciones",
+    "sinEvaluaciones": "Todavía no has completado ninguna evaluación.",
+    "evaluacionNumero": "Evaluación #{{id}}"
+  },
+  "evaluacion": {
+    "titulo": "Evaluación del ciclo",
+    "descripcion": "Cada {{cantidad}} operaciones se desbloquea un quiz con preguntas sobre lo que TÚ hiciste en la simulación.",
+    "progresoCiclo": "Progreso del ciclo",
+    "lista": "¡Tu evaluación está lista!",
+    "operacionesCiclo": "Operaciones del ciclo: {{realizadas}} / {{meta}} — te faltan {{faltan}}.",
+    "continuar": "Continuar evaluación",
+    "empezar": "Empezar evaluación",
+    "respondeTodo": "Responde todo ({{respondidas}}/{{total}})",
+    "entregar": "Entregar evaluación",
+    "tuRespuesta": "Tu respuesta:",
+    "correcta": "Correcta",
+    "volver": "Volver"
+  },
+  "tour": {
+    "aria": "Tutorial de InverSim",
+    "paso": "Paso {{actual}} de {{total}}",
+    "saltar": "Saltar tutorial",
+    "atras": "Atrás",
+    "siguiente": "Siguiente",
+    "entendido": "¡Entendido!",
+    "bienvenida": {
+      "titulo": "¡Bienvenido a InverSim! 👋",
+      "texto": "Aquí practicas invertir en la bolsa con dinero ficticio. No hay riesgo real: equivocarte es parte de aprender. Te muestro lo básico en 1 minuto."
+    },
+    "dinero": {
+      "titulo": "💰 Tu dinero",
+      "texto": "«Capital disponible» es el efectivo que puedes usar para comprar. «En inversiones» es lo que valen hoy tus acciones. «Patrimonio total» es la suma de ambos: así sabes si vas ganando o perdiendo respecto al equivalente inicial a {{capital}}."
+    },
+    "empresas": {
+      "titulo": "🏢 Las empresas",
+      "texto": "Cada fila es una empresa que cotiza en bolsa. Comprar una acción es comprar un pedacito de esa empresa. La flecha verde ▲ indica que su precio sube; la roja ▼, que baja. Haz clic en una para verla en el gráfico."
+    },
+    "grafico": {
+      "titulo": "📈 Gráfica de precios",
+      "texto": "Consulta el precio en vivo o explora antecedentes simulados de un día, una semana, un mes o un año. Los periodos históricos son ficticios y no representan cotizaciones reales."
+    },
+    "operar": {
+      "titulo": "🛒 Comprar y vender",
+      "texto": "Elige cuántas acciones quieres y pulsa «Comprar» o «Vender». Ganas dinero si vendes más caro de lo que compraste; si vendes más barato, pierdes. Solo puedes comprar con tu saldo y vender lo que tienes."
+    },
+    "portafolio": {
+      "titulo": "🗂️ Tu portafolio",
+      "texto": "Aquí ves lo que tienes: cuántas acciones, a qué precio las compraste y cuánto ganas o pierdes hoy. Esa ganancia es «no realizada» hasta que vendas."
+    },
+    "mentor": {
+      "titulo": "🎓 Tu Mentor",
+      "texto": "Pulsa «Analizar mis decisiones» y el Mentor te explicará con palabras simples qué hiciste bien, qué mejorar y por qué el mercado reaccionó así. También puedes hacerle preguntas."
+    },
+    "progreso": {
+      "titulo": "🏁 Mi progreso",
+      "texto": "En esta pestaña ves cómo evoluciona tu capital desde el inicio y, tras algunas operaciones, desbloqueas una evaluación para comprobar lo que aprendiste. ¡A invertir!"
+    }
+  },
+  "auth": {
+    "descripcionAntes": "Practica invertir con ",
+    "dineroFicticio": "dinero ficticio",
+    "descripcionDespues": ". Sin riesgo y sin experiencia previa.",
+    "iniciarSesion": "Iniciar sesión",
+    "crearCuenta": "Crear cuenta",
+    "nombre": "Nombre",
+    "correo": "Correo electrónico",
+    "contrasena": "Contraseña",
+    "contrasenasNoCoinciden": "Las contraseñas no coinciden.",
+    "errorConexion": "No pudimos conectar con el servidor. ¿Está encendido el backend?",
+    "minimoContrasena": "Mínimo 8 caracteres.",
+    "repiteContrasena": "Repite la contraseña",
+    "espera": "Un momento…",
+    "crearCuentaEmpezar": "Crear cuenta y empezar con el equivalente a {{capital}}",
+    "entrar": "Entrar",
+    "yaTienesCuenta": "¿Ya tienes cuenta?",
+    "primeraVez": "¿Primera vez aquí?",
+    "iniciaSesion": "Inicia sesión",
+    "creaCuenta": "Crea tu cuenta",
+    "olvidoPassword": "¿Olvidaste tu contraseña?",
+    "enviarEnlace": "Enviar enlace de recuperación",
+    "volverLogin": "Volver a iniciar sesión",
+    "restablecerTitulo": "Crea una nueva contraseña",
+    "nuevaContrasena": "Nueva contraseña",
+    "guardarNuevaContrasena": "Guardar nueva contraseña",
+    "passwordActualizado": "Contraseña actualizada. Ya puedes iniciar sesión.",
+    "enlaceInvalido": "Falta el enlace de recuperación o no es válido. Solicita uno nuevo."
+  }
+}

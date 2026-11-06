@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "simulador": "Simulator",
+    "progreso": "My progress",
+    "ajustes": "Settings",
+    "perfil": "My profile",
+    "billetera": "Wallet",
+    "hola": "Hello, {{nombre}}",
+    "tutorial": "View tutorial",
+    "cerrarSesion": "Log out",
+    "navegacion": "Main navigation"
+  },
+  "moneda": {
+    "etiqueta": "Currency",
+    "descripcionSelector": "Display currency",
+    "fuenteTrm": "TRM: Colombian Financial Superintendence",
+    "fuenteEcb": "Other currencies: European Central Bank",
+    "licenciaTrm": "TRM · CC BY-SA 4.0",
+    "vigencias": "Rates valid: TRM {{trm}} · ECB {{ecb}}",
+    "vigenciaTrm": "TRM valid: {{trm}}",
+    "vigenciaEcb": "ECB valid: {{ecb}}",
+    "actualizar": "Refresh rates",
+    "actualizando": "Checking official rates…",
+    "estado": {
+      "cargando": "Loading official rates…",
+      "error": "Official rates could not be loaded.",
+      "parcial": "Some rates are unavailable; only loaded currencies can be selected."
+    }
+  },
+  "perfil": {
+    "titulo": "My profile",
+    "subtitulo": "This is how you appear on InverSim.",
+    "foto": {
+      "titulo": "Profile photo",
+      "ayuda": "JPG, PNG or WebP up to 5 MB.",
+      "cambiar": "Change photo",
+      "quitar": "Remove photo",
+      "subiendo": "Uploading… {{progreso}}%",
+      "subiendoAria": "Photo upload progress",
+      "listo": "Photo updated.",
+      "quitada": "Photo removed.",
+      "tipoInvalido": "Choose a JPG, PNG or WebP image.",
+      "muyGrande": "Image is larger than 5 MB.",
+      "error": "We couldn't process that image."
+    },
+    "cuenta": {
+      "titulo": "Account details",
+      "nombre": "Username",
+      "nombreAyuda": "Between 1 and 50 characters.",
+      "correo": "Email",
+      "correoAyuda": "Email cannot be changed.",
+      "capital": "Available capital",
+      "guardar": "Save changes",
+      "guardando": "Saving…",
+      "guardado": "Name updated.",
+      "nombreVacio": "Name cannot be empty."
+    }
+  },
+  "ajustes": {
+    "titulo": "Settings",
+    "subtitulo": "Customize how InverSim looks and reads.",
+    "editarPerfil": "Edit profile",
+    "apariencia": {
+      "titulo": "Appearance",
+      "descripcion": "Switch between light and dark mode.",
+      "modoOscuro": "Dark mode",
+      "activado": "On",
+      "desactivado": "Off"
+    },
+    "idioma": {
+      "titulo": "Language",
+      "descripcion": "Choose the interface language."
+    },
+    "reinicio": {
+      "titulo": "Reset simulation",
+      "descripcion": "Delete your investments, trades, quizzes, and progress, and restore your starting capital.",
+      "boton": "Reset game",
+      "confirmarTitulo": "Reset the entire simulation?",
+      "confirmarDescripcion": "Your portfolio, trade history, wallet movements, quizzes, and progress will be permanently deleted. Your balance will return to the equivalent of {{capital}}. This action cannot be undone.",
+      "cancelar": "Cancel",
+      "confirmar": "Yes, reset",
+      "reiniciando": "Resetting…",
+      "listo": "Simulation reset. Your starting balance is intact and your progress starts at 0%.",
+      "error": "The simulation could not be reset. Please try again."
+    },
+    "moneda": {
+      "titulo": "Display currency",
+      "descripcion": "Choose the currency for balances, prices, and results. This does not change your money or trades."
+    },
+    "guardado": "Settings saved.",
+    "error": "We couldn't save the setting. Previous value restored."
+  },
+  "busqueda": {
+    "etiqueta": "Global search",
+    "placeholder": "Search stocks or sections…",
+    "acciones": "Stocks",
+    "secciones": "Sections",
+    "sinResultados": "No results for “{{q}}”",
+    "error": "We couldn't load the stocks."
+  },
+  "alertas": {
+    "titulo": "Alerts",
+    "abrir": "Open alerts",
+    "cerrar": "Dismiss alert",
+    "noLeidas": "{{count}} unread",
+    "vacio": "No alerts yet. We'll let you know when you sell a stock.",
+    "marcarLeidas": "Mark as read",
+    "borrar": "Clear all",
+    "venta": {
+      "ganancia": "You made {{monto}} on your sale!",
+      "perdida": "You lost {{monto}} on your sale",
+      "neutro": "You sold at break-even",
+      "detalle": "Sold {{cantidad}} × {{ticker}} at {{precio}}"
+    }
+  },
+  "billetera": {
+    "titulo": "My wallet",
+    "subtitulo": "Your money, your investments and your history in one place.",
+    "saldo": "Available balance",
+    "saldoAyuda": "Cash ready to buy stocks",
+    "patrimonio": "Total net worth",
+    "valorAcciones": "Value of your stocks",
+    "invertido": "Total invested",
+    "invertidoAyuda": "What you paid for your current stocks. Worth {{valor}} today.",
+    "ganancia": "Historical profit / loss",
+    "gananciaAyuda": "Realized: {{realizada}} · Open: {{abierta}}",
+    "mejor": "Most profitable stock",
+    "mejorNota": "Best return on the money you put into it (sales + open position).",
+    "mejorAyuda": "{{empresa}} · {{monto}} in total",
+    "mejorVacia": "No data yet. Buy and sell to find out.",
+    "composicion": "Where is your money?",
+    "efectivo": "Cash",
+    "historial": {
+      "titulo": "Transaction history",
+      "nota": "The result only appears on sales: what you gained or lost versus your average purchase price.",
+      "fecha": "Date",
+      "ticker": "Ticker",
+      "cantidad": "Quantity",
+      "precio": "Price",
+      "resultado": "Result",
+      "sinResultado": "—",
+      "vacio": "You haven't made any trades yet.",
+      "irSimulador": "Go to the simulator",
+      "mostrando": "Showing {{n}} of {{total}} transactions"
+    },
+    "tipo": {
+      "compra": "Buy",
+      "venta": "Sell"
+    },
+    "error": "We couldn't load your wallet. Retrying…"
+  },
+  "simulador": {
+    "balance": {
+      "capital": "Available capital",
+      "capitalAyuda": "Cash available to buy",
+      "capitalDetalle": "Virtual cash you can use to buy stocks.",
+      "inversiones": "Invested",
+      "inversionesDetalle": "Current value of your stocks",
+      "patrimonio": "Total net worth",
+      "patrimonioDetalle": "{{cantidad}} vs. start",
+      "patrimonioDetalleAyuda": "Cash + the value of your stocks. Starts with the equivalent of {{capital}}."
+    },
+    "mercado": {
+      "titulo": "Market",
+      "ayuda": "Choose a company to see its chart. The % shows the change over the last few minutes.",
+      "tienesAcciones": "You own shares of this company"
+    },
+    "grafico": {
+      "selecciona": "Select a stock",
+      "selectorPeriodo": "Chart period",
+      "periodos": {
+        "live": "Live",
+        "1w": "Weeks",
+        "1m": "1 month",
+        "1y": "1 year"
+      },
+      "semanaCorta": "Week {{n}}",
+      "precio": "Price",
+      "enVivo": "🔴 Live: the price changes every 3 seconds. The dotted line marks where this period began.",
+      "historialSimulado": "This history is an educational simulation, not real historical prices. The last point matches the current price.",
+      "error": "Could not load this period's history. Please try again."
+    },
+    "portafolio": {
+      "titulo": "My portfolio",
+      "vacio": "You don't own any stocks yet. Buy your first one to get started!",
+      "accion": "Stock",
+      "cantidad": "Qty.",
+      "costoPromedio": "Avg. cost",
+      "precioActual": "Price today",
+      "valor": "Value",
+      "ganancia": "Profit",
+      "ultimasOperaciones": "Recent trades",
+      "sinOperaciones": "You haven't made any trades yet.",
+      "a": "at"
+    },
+    "tipoOperacion": {
+      "compra": "Buy",
+      "venta": "Sell"
+    },
+    "operar": {
+      "titulo": "Trade {{ticker}}",
+      "cantidadMinima": "Enter a quantity of at least 1.",
+      "resultado": {
+        "compra": "Bought {{cantidad}} × {{ticker}} at {{precio}} (total {{total}}).",
+        "venta": "Sold {{cantidad}} × {{ticker}} at {{precio}} (total {{total}})."
+      },
+      "ganaste": "🎉 You made {{cantidad}}.",
+      "perdiste": "📉 You lost {{cantidad}}.",
+      "precioAccion": "Price per share",
+      "tienes": "You own",
+      "numeroAcciones": "{{cantidad}} shares",
+      "maximoCompra": "You can buy up to",
+      "cuantas": "How many shares?",
+      "maximoAtajo": "Max buy",
+      "venderTodo": "Sell all I own",
+      "totalEstimado": "Estimated total:",
+      "consejo": "You make money if you sell for more than you paid. If you sell for less, you lose money."
+    },
+    "mentor": {
+      "bienvenida": "Hi! I'm your Mentor 🎓. I can analyze your decisions and investments. For questions about concepts, use the InverSim learning chat.",
+      "titulo": "Your Mentor",
+      "descripcion": "I analyze your trades and help you understand your decisions. For investing concepts, ask the learning chat.",
+      "pensando": "The Mentor is thinking…",
+      "analiza": "Analyze my decisions",
+      "consejoInicial": "Ask for a tip to get started",
+      "placeholder": "Ask something",
+      "enviar": "Send",
+      "modoDemo": "Demo mode: automated answers without external AI."
+    },
+    "pie": "InverSim is an educational simulator using fictional money. This is not financial advice."
+  },
+  "progreso": {
+    "cargando": "Loading your progress…",
+    "titulo": "My progress",
+    "patrimonioActual": "Current net worth",
+    "resultadoTotal": "Total result",
+    "desdeInicio": "{{porcentaje}} since the start",
+    "operaciones": "Trades",
+    "mejorVenta": "Best sale",
+    "peorVenta": "Worst sale",
+    "sinVentas": "No sales yet",
+    "evolucion": "Your capital over time",
+    "evolucionAyuda": "Your net worth (cash + stocks) since you started. The dotted line is your starting capital.",
+    "patrimonio": "Net worth",
+    "capitalInicial": "Starting capital",
+    "evaluaciones": "Your quizzes",
+    "sinEvaluaciones": "You haven't completed any quizzes yet.",
+    "evaluacionNumero": "Quiz #{{id}}"
+  },
+  "evaluacion": {
+    "titulo": "Cycle quiz",
+    "descripcion": "After every {{cantidad}} trades, a quiz unlocks with questions about what YOU did in the simulator.",
+    "progresoCiclo": "Cycle progress",
+    "lista": "Your quiz is ready!",
+    "operacionesCiclo": "Cycle trades: {{realizadas}} / {{meta}} — {{faltan}} to go.",
+    "continuar": "Continue quiz",
+    "empezar": "Start quiz",
+    "respondeTodo": "Answer all ({{respondidas}}/{{total}})",
+    "entregar": "Submit quiz",
+    "tuRespuesta": "Your answer:",
+    "correcta": "Correct",
+    "volver": "Back"
+  },
+  "tour": {
+    "aria": "InverSim tutorial",
+    "paso": "Step {{actual}} of {{total}}",
+    "saltar": "Skip tutorial",
+    "atras": "Back",
+    "siguiente": "Next",
+    "entendido": "Got it!",
+    "bienvenida": {
+      "titulo": "Welcome to InverSim! 👋",
+      "texto": "Practice investing in the stock market with fictional money. There's no real risk: making mistakes is part of learning. Here's the basics in 1 minute."
+    },
+    "dinero": {
+      "titulo": "💰 Your money",
+      "texto": "“Available capital” is the cash you can use to buy. “Invested” is what your stocks are worth today. “Total net worth” is both added together, so you can see how you're doing compared to the initial equivalent of {{capital}}."
+    },
+    "empresas": {
+      "titulo": "🏢 Companies",
+      "texto": "Each row is a publicly traded company. Buying a stock means buying a small piece of that company. The green arrow ▲ means its price is rising; the red arrow ▼ means it's falling. Click one to see it on the chart."
+    },
+    "grafico": {
+      "titulo": "📈 Price chart",
+      "texto": "View the live price or explore simulated history for one day, one week, one month, or one year. Historical periods are fictional and do not represent real market quotes."
+    },
+    "operar": {
+      "titulo": "🛒 Buying and selling",
+      "texto": "Choose how many shares you want and click “Buy” or “Sell.” You make money if you sell for more than you paid; if you sell for less, you lose money. You can only buy with your balance and sell shares you own."
+    },
+    "portafolio": {
+      "titulo": "🗂️ Your portfolio",
+      "texto": "Here you can see what you own: how many shares, what you paid, and how much you've gained or lost today. That gain is unrealized until you sell."
+    },
+    "mentor": {
+      "titulo": "🎓 Your Mentor",
+      "texto": "Tap “Analyze my decisions” and the Mentor will explain in simple words what you did well, what to improve, and why the market reacted that way. You can also ask questions."
+    },
+    "progreso": {
+      "titulo": "🏁 My progress",
+      "texto": "This tab shows how your capital changes over time. After a few trades, you unlock a quiz to check what you've learned. Happy investing!"
+    }
+  },
+  "auth": {
+    "descripcionAntes": "Practice investing with ",
+    "dineroFicticio": "fictional money",
+    "descripcionDespues": ". No risk and no experience needed.",
+    "iniciarSesion": "Log in",
+    "crearCuenta": "Create account",
+    "nombre": "Name",
+    "correo": "Email",
+    "contrasena": "Password",
+    "contrasenasNoCoinciden": "Passwords don't match.",
+    "errorConexion": "Couldn't connect to the server. Is the backend running?",
+    "minimoContrasena": "At least 8 characters.",
+    "repiteContrasena": "Repeat password",
+    "espera": "One moment…",
+    "crearCuentaEmpezar": "Create account and start with the equivalent of {{capital}}",
+    "entrar": "Continue",
+    "yaTienesCuenta": "Already have an account?",
+    "primeraVez": "First time here?",
+    "iniciaSesion": "Log in",
+    "creaCuenta": "Create your account",
+    "olvidoPassword": "Forgot your password?",
+    "enviarEnlace": "Send recovery link",
+    "volverLogin": "Back to log in",
+    "restablecerTitulo": "Create a new password",
+    "nuevaContrasena": "New password",
+    "guardarNuevaContrasena": "Save new password",
+    "passwordActualizado": "Password updated. You can now log in.",
+    "enlaceInvalido": "The recovery link is missing or invalid. Request a new one."
+  }
+}
