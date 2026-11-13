@@ -13,6 +13,26 @@
 </script>
     <title>InverSim · Aprende a invertir sin riesgo</title>
 <link rel="icon" type="image/png" href="/inversim-icon.png" />
+<script>
+(function () {
+  try {
+    var p = localStorage.getItem("inversim_chat_pendiente");
+    if (p === null) return;
+    localStorage.removeItem("inversim_chat_pendiente");
+    Object.keys(localStorage).forEach(function (k) {
+      var l = k.toLowerCase();
+      if (l.indexOf("bp") === 0 || l.indexOf("botpress") !== -1) localStorage.removeItem(k);
+    });
+    if (p !== "ninguno") {
+      var g = localStorage.getItem("inversim_bpchat_" + p);
+      if (g) {
+        var d = JSON.parse(g);
+        Object.keys(d).forEach(function (k) { localStorage.setItem(k, d[k]); });
+      }
+    }
+  } catch (e) {}
+})();
+</script>
 <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/11/05/04/20261105044144-XCO6TBTV.js" defer></script>
   </head>
