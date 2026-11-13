@@ -15,7 +15,7 @@ export default function NavBar({ onTutorial }) {
         <div className="navbar-brand-nav">
           <NavLink to="/" end className="logo" aria-label="InverSim">
             <span className="logo-icon" aria-hidden="true">
-              <img src="/inversim-icon.png" alt="" />
+              <img src={`${import.meta.env.BASE_URL}inversim-icon.png`} alt="" />
             </span>
             <span>InverSim</span>
           </NavLink>

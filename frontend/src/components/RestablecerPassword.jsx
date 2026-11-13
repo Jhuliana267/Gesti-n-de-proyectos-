@@ -35,7 +35,7 @@ export default function RestablecerPassword() {
     <div className="bienvenida">
       <form className="card bienvenida-card" onSubmit={enviar}>
         <h1 className="auth-brand">
-          <img src="/inversim-icon.png" alt="" />
+          <img src={`${import.meta.env.BASE_URL}inversim-icon.png`} alt="" />
           InverSim
         </h1>
         <h2>{t("auth.restablecerTitulo")}</h2>
