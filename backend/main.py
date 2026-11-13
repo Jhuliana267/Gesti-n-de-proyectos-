@@ -42,11 +42,14 @@ async def lifespan(app: FastAPI):
     for t in tareas:
         t.cancel()
 
-
 app = FastAPI(title="InverSim API", version="2.0", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://jhuliana267.github.io",
+    ],
     allow_methods=["*"],
     allow_headers=["*"],  # incluye Authorization
 )

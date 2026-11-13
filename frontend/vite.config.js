@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 
 // El proxy reenvía /api al backend (FastAPI en el puerto 8000): no hay problemas de CORS en desarrollo.
 export default defineConfig({
+  base: "/Gesti-n-de-proyectos-/",
   plugins: [react()],
   server: {
     port: 5173,
