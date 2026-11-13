@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import { api, token } from "./api";
-
+import { cambiarChatA, liberarChat } from "./limpiarChat";
 const AuthCtx = createContext(null);
 export const useAuth = () => useContext(AuthCtx);
 
@@ -17,9 +17,17 @@ export function AuthProvider({ children }) {
       .finally(() => setCargando(false));
   }, []);
 
+    // Cuando se sabe quién es el usuario, carga su conversación del chat.
+  useEffect(() => {
+    if (usuario?.id) cambiarChatA(usuario.id);
+  }, [usuario?.id]);
+
   // El cliente de la API avisa cuando el servidor rechaza el token (401).
   useEffect(() => {
-    const alCerrar = () => setUsuario(null);
+    const alCerrar = () => {
+      setUsuario(null);
+      liberarChat();
+    };
     window.addEventListener("inversim:logout", alCerrar);
     return () => window.removeEventListener("inversim:logout", alCerrar);
   }, []);
@@ -39,6 +47,7 @@ export function AuthProvider({ children }) {
   const cerrarSesion = useCallback(() => {
     token.clear();
     setUsuario(null);
+    liberarChat();
   }, []);
 
   const marcarTutorialVisto = useCallback(async () => {
