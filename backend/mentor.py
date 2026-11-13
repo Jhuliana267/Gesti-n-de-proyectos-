@@ -125,7 +125,25 @@ def proveedor_activo() -> str | None:
             return "openai"
     return None
 
-
+def _post_con_reintentos(url, cuerpo, headers, intentos=3):
+    """Reintenta si Google/OpenAI están saturados (429, 5xx) o tardan en responder."""
+    espera = 2
+    for n in range(intentos):
+        try:
+            r = httpx.post(url, json=cuerpo, headers=headers, timeout=30)
+            if r.status_code in (429, 500, 502, 503, 504) and n < intentos - 1:
+                print(f"[mentor] reintento {n + 1}: respondió {r.status_code}")
+                time.sleep(espera)
+                espera *= 2
+                continue
+            r.raise_for_status()
+            return r
+        except httpx.TimeoutException:
+            if n == intentos - 1:
+                raise
+            print(f"[mentor] reintento {n + 1}: tiempo agotado")
+            time.sleep(espera)
+            espera *= 2
 def _llamar_gemini(mensajes: list[dict]) -> str:
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{config.GEMINI_MODEL}:generateContent"
     cuerpo = {
@@ -136,8 +154,7 @@ def _llamar_gemini(mensajes: list[dict]) -> str:
         ],
         "generationConfig": {"temperature": 0.4, "maxOutputTokens": config.IA_MAX_TOKENS},
     }
-    r = httpx.post(url, json=cuerpo, headers={"x-goog-api-key": config.GEMINI_API_KEY}, timeout=30)
-    r.raise_for_status()
+    r = _post_con_reintentos(url, cuerpo, {"x-goog-api-key": config.GEMINI_API_KEY})
     partes = r.json()["candidates"][0]["content"]["parts"]
     return "".join(p.get("text", "") for p in partes).strip()
 
