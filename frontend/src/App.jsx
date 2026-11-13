@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { AlertasProvider } from "./AlertasContext";
 import { AuthProvider, useAuth } from "./AuthContext";
@@ -26,7 +26,7 @@ function SincronizarIdioma() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <ThemeProvider>
           <CurrencyProvider>
@@ -46,6 +46,6 @@ export default function App() {
           </CurrencyProvider>
         </ThemeProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

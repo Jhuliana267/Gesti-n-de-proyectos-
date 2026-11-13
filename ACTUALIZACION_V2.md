@@ -2111,7 +2111,7 @@ export default function Evaluacion({ ciclo, onCompletada }) {
 -import Portfolio from "./components/Portfolio";
 -
 -const CLAVE = "inversim_usuario_id";
-+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
++import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 +import { AuthProvider } from "./AuthContext";
 +import { RutaProtegida, SoloInvitados } from "./RutaProtegida";
 +import AuthScreen from "./components/AuthScreen";
@@ -2195,7 +2195,7 @@ export default function Evaluacion({ ciclo, onCompletada }) {
 -      </main>
 -      <footer>InverSim es un simulador educativo con dinero ficticio. No es asesoría financiera.</footer>
 -    </div>
-+    <BrowserRouter>
++    <HashRouter>
 +      <AuthProvider>
 +        <Routes>
 +          <Route path="/login" element={<SoloInvitados><AuthScreen /></SoloInvitados>} />
@@ -2204,7 +2204,7 @@ export default function Evaluacion({ ciclo, onCompletada }) {
 +          <Route path="*" element={<Navigate to="/" replace />} />
 +        </Routes>
 +      </AuthProvider>
-+    </BrowserRouter>
++    </HashRouterer>
    );
  }
 ```
